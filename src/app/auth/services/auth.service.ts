@@ -17,6 +17,6 @@ export class AuthService {
   }
 
   registroConNest(datos: any){
-    return this.http.post<any>(`${this.baseUrl}/register`,datos);
+    return this.http.post<any>(`${this.baseUrl}/auth/register`,datos);
   }
 }

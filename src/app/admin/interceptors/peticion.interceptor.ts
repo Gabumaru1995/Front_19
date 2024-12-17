@@ -13,7 +13,7 @@ export class peticionInterceptor implements HttpInterceptor{
     let peticion=req.clone({
       setHeaders:{
         'Accept':'application/json',
-        'Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiZ3VhdGl0YTJAZ29rdS5jb20iLCJpZCI6MywiaWF0IjoxNzE4NTgwMDUzLCJleHAiOjE3MTg1ODM2NTN9.klT2_96IdZhwQSKqZ0cmtiNRhQZIzSYbONCA4okjoiM'
+        'Authorization':'Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiZ3VhdGl0YTlAZ29rdS5jb20iLCJpZCI6MTQsImlhdCI6MTczNDQwMTIxMiwiZXhwIjoxNzM0NDA0ODEyfQ.UqQP98AxxyDLQPlbaTr6QihYhnWKegxQ-1slFap4ErI'
       }
     })
     return handler.handle(peticion).pipe(tap(()=>{},
